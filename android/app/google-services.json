@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "517865022954",
+    "firebase_url": "https://travel-car-cf294-default-rtdb.firebaseio.com",
+    "project_id": "travel-car-cf294",
+    "storage_bucket": "travel-car-cf294.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517865022954:android:52f1213de7ee2c73cdfe93",
+        "android_client_info": {
+          "package_name": "com.example.mamta_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "517865022954-fo81r0uuvbu8g9kbsl4e8t06dispatin.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdnFmHOv1j8TZj-K6WkG0UpCzIbIksXLY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "517865022954-fo81r0uuvbu8g9kbsl4e8t06dispatin.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517865022954:android:845d694a05e85380cdfe93",
+        "android_client_info": {
+          "package_name": "com.example.travelby_car"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "517865022954-fo81r0uuvbu8g9kbsl4e8t06dispatin.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdnFmHOv1j8TZj-K6WkG0UpCzIbIksXLY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "517865022954-fo81r0uuvbu8g9kbsl4e8t06dispatin.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
