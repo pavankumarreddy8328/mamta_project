@@ -39,6 +39,7 @@ class _HomepageState extends State<Homepage>{
       try {
 
         await FirebaseAuth.instance.signOut();
+        Navigator.pushNamed(context, '/Signinpage');
 
       } catch (e) {
         print(e);
@@ -57,7 +58,7 @@ class _HomepageState extends State<Homepage>{
           appBar: AppBar(
             title: Text('Weight Tracker'),
             actions: <Widget>[
-              FlatButton(
+              TextButton(
                 child: Text('Logout',
                     style: TextStyle(fontSize: 17.0, color: Colors.white)),
                 onPressed: () => _signOut(context),
@@ -67,6 +68,7 @@ class _HomepageState extends State<Homepage>{
           body: ListView(
        children: <Widget>[
          Container(
+           padding: EdgeInsets.fromLTRB(10.0, 20.0, 10.0, 20.0),
             child:  Form(
               key: formKey,
               child: TextFormField(
@@ -104,18 +106,20 @@ class _HomepageState extends State<Homepage>{
 
             Container(
               padding: EdgeInsets.fromLTRB(80.0, 10.0, 60.0, 0.0),
-          child: RaisedButton(
-            onPressed: (){
-              _submit();
-            },
-            child: Text(
-                'Save Weight'
+          child: ButtonTheme(
+            child: ElevatedButton(
+              onPressed: (){
+                _submit();
+              },
+              child: Text(
+                  'Save Weight'
+              ),
             ),
           ),
         ),
          Container(
            padding: EdgeInsets.fromLTRB(80.0, 10.0, 60.0, 0.0),
-           child: RaisedButton(
+           child: ElevatedButton(
              onPressed: (){
                Navigator.pushNamed(context, '/Database');
              },

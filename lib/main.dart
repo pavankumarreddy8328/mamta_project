@@ -14,10 +14,11 @@ void main() async{
   runApp( MaterialApp(
     debugShowCheckedModeBanner: false,
       home: MyApp(),
-    routes: <String, WidgetBuilder> {
-       '/Database': (context) => GetUserName(),
+    routes: <String, WidgetBuilder>{
+      '/Database': (context) => GetUserName(),
       '/Homepage': (context) => Homepage(),
-    },
+      '/Signinpage': (context) => SignInPage(),
+    }
   ));
 }
 

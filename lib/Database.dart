@@ -28,15 +28,38 @@ class _GetUserNameState extends State<GetUserName>{
           return Text("Loading");
         }
 
-        return ListView(
+        return Scaffold(
+          appBar: AppBar(
+            titleSpacing: 30.0,
+            title: Text(
+              'Weights',
+              style: TextStyle(fontSize: 20.0,
+              color: Colors.white),
+
+            ),
+          ),
+
+            body: Card(
+            child: ListView(
+              padding: EdgeInsets.fromLTRB(15.0, 10.0, 15.0,0.0),
+          scrollDirection: Axis.vertical,
           children: snapshot.data.docs.map((DocumentSnapshot document) {
             return new ListTile(
+
+              hoverColor: Colors.blue,
+              leading: Icon(
+                Icons.desktop_mac_outlined,
+                color: Colors.black,
+              ),
               title: new Container(
-                  child: Text(document['weight'])
+                padding: EdgeInsets.all(20.0),
+                  child: Text( 'Weight of '+users.id +':'+document.data()['weight'],
+                  style: TextStyle(fontSize: 18.0,color: Colors.blue),
+                  textAlign: TextAlign.center,)
               ),
             );
           }).toList(),
-        );
+        )));
       },
     );
   }

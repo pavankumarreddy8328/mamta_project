@@ -17,24 +17,27 @@ class SignInPage extends StatelessWidget{
       case AuthStatus.notSignedIn:
         return Scaffold(
           appBar: AppBar(
+            titleSpacing: 30.0,
             title: Text(
               'SignIn',
-              style: TextStyle(color: Colors.amber,fontSize: 20.0),
+              style: TextStyle(color: Colors.white,fontSize: 25.0),
+              textAlign: TextAlign.center,
             ),
           ),
-          body: RaisedButton(
-            padding: EdgeInsets.fromLTRB(50.0, 50.0, 50.0, 0.0),
+          body: Container(
+              padding: EdgeInsets.fromLTRB(150.0, 50.0, 50.0, 0.0),
+              child: ElevatedButton(
             onPressed: () {
               signInAnonymous();
               Navigator.pushNamed(context, '/Homepage');
             },
             child: Container(
-              color: Colors.white,
+              color: Colors.blue,
               child: Text(
                 'SigIn',
                 style: TextStyle(fontStyle: FontStyle.italic, fontSize: 30.0),
               ),),
-          ),
+          )),
         );
       case AuthStatus.signedIn:
         return Homepage();
